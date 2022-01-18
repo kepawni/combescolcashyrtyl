@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tags",
+  "info": {
+    "name": "tag"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "value": {
+      "type": "string",
+      "unique": true,
+      "required": true,
+      "regex": "^\\S+$",
+      "maxLength": 16,
+      "minLength": 2
+    }
+  }
+}
